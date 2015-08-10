@@ -25,7 +25,7 @@ set -ex
 echo $PWD
 
 mkdir -p "${RPM_BUILD_ROOT}/srv/formulas/snmp-formula/snmp"
-cp -r "${RPM_BUILD_DIR}/snmp-formula/snmp" "${RPM_BUILD_ROOT}/srv/formulas/snmp-formula/snmp"
+cp -r "${RPM_BUILD_DIR}/snmp-formula/snmp" "${RPM_BUILD_ROOT}/srv/formulas/snmp-formula/"
 
 (cd ${RPM_BUILD_ROOT}; find srv/formulas/snmp-formula -type f -print) | awk '{print "/"$0}' > snmp-formula-files.txt
 %files formula -f snmp-formula-files.txt
