@@ -11,7 +11,6 @@ SaltStack SNMP formula
 %package formula
 BuildArch: noarch
 Summary: SNMP SaltStack formula
-Requires: salt
 %description formula
 SaltStack SNMP formula
 
