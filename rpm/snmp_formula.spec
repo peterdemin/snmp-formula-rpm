@@ -15,7 +15,7 @@ Summary: SNMP SaltStack formula
 SaltStack SNMP formula
 
 %build
-git clone "https://github.com/saltstack-formulas/snmp-formula.git"
+git clone "https://github.com/peterdemin/snmp-formula.git"
 (cd snmp-formula && find -maxdepth 1 -mindepth 1 ! -name snmp | xargs rm -rf)
 
 %install
